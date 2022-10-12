@@ -2,8 +2,8 @@
 
 namespace Alghobary\LaravelMacros\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Alghobary\LaravelMacros\LaravelMacrosServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
