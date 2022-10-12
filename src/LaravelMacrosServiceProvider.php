@@ -2,9 +2,9 @@
 
 namespace Alghobary\LaravelMacros;
 
+use Alghobary\LaravelMacros\Commands\LaravelMacrosCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Alghobary\LaravelMacros\Commands\LaravelMacrosCommand;
 
 class LaravelMacrosServiceProvider extends PackageServiceProvider
 {

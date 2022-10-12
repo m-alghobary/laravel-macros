@@ -2,9 +2,9 @@
 
 namespace Alghobary\LaravelMacros\Tests;
 
+use Alghobary\LaravelMacros\LaravelMacrosServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Alghobary\LaravelMacros\LaravelMacrosServiceProvider;
 
 class TestCase extends Orchestra
 {
