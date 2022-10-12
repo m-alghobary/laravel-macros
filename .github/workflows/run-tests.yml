@@ -20,8 +20,8 @@ jobs:
           - laravel: 9.*
             testbench: 7.*
 
-    name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
-
+    name: PHP-${{ matrix.php }} - ${{ matrix.stability }}
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
