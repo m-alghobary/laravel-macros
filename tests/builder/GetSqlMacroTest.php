@@ -3,9 +3,8 @@
 namespace Alghobary\Tests\Builder;
 
 use Illuminate\Database\Eloquent\Model;
-
-use function PHPUnit\Framework\assertIsString;
 use function PHPUnit\Framework\assertEqualsIgnoringCase;
+use function PHPUnit\Framework\assertIsString;
 use function PHPUnit\Framework\assertStringNotContainsString;
 
 it('should get the builder sql query with the actual values', function () {
