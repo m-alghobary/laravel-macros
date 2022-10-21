@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Pagination\LengthAwarePaginator;
-
 use function PHPUnit\Framework\assertEquals;
 
 it('can paginate collections', function () {
