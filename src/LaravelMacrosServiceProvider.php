@@ -2,6 +2,7 @@
 
 namespace Alghobary\LaravelMacros;
 
+use Alghobary\LaravelMacros\Macros\BuilderMacros;
 use Alghobary\LaravelMacros\Macros\CollectionMacros;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -17,5 +18,6 @@ class LaravelMacrosServiceProvider extends PackageServiceProvider
     {
         // register macros
         CollectionMacros::register();
+        BuilderMacros::register();
     }
 }
