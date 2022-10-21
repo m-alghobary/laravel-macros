@@ -1,5 +1,7 @@
 <?php
 
+namespace Alghobary\Tests\Collection;
+
 use Illuminate\Database\Eloquent\Model;
 
 use function PHPUnit\Framework\assertEquals;
