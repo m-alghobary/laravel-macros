@@ -3,15 +3,13 @@
 namespace Alghobary\Tests\Collection;
 
 use Illuminate\Database\Eloquent\Model;
-
 use function PHPUnit\Framework\assertEquals;
 
 it('can search in collection of objects', function () {
-
     class MyModel extends Model
     {
         protected $guarded = [];
-    };
+    }
 
     $items = collect([
         new MyModel(['id' => 1, 'name' => 'Ali', 'job' => 'Doctor']),
@@ -29,7 +27,6 @@ it('can search in collection of objects', function () {
     assertEquals($result[1]->job, 'Photographer');
 });
 
-
 it('can search in collection of associated arrays', function () {
     $items = collect([
         ['id' => 1, 'name' => 'Ali', 'job' => 'Doctor'],
@@ -46,7 +43,6 @@ it('can search in collection of associated arrays', function () {
     assertEquals($result[1]['name'], 'Ahmed');
     assertEquals($result[1]['job'], 'Photographer');
 });
-
 
 it('can search in collection of indexed arrays', function () {
     $items = collect([

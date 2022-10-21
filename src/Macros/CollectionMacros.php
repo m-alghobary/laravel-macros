@@ -2,9 +2,9 @@
 
 namespace Alghobary\LaravelMacros\Macros;
 
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Illuminate\Pagination\LengthAwarePaginator;
 
 class CollectionMacros
 {
@@ -29,12 +29,9 @@ class CollectionMacros
             );
         });
 
-
-
         /**
-         * Add a 'searchFor' method, to search in laravel collection, 
-         * for items that has a search 'term' in one or more of its fields 
-         * 
+         * Add a 'searchFor' method, to search in laravel collection,
+         * for items that has a search 'term' in one or more of its fields
          */
         Collection::macro('searchFor', function (string $searchTerm, array $attributes = []) {
             $attributes = Arr::wrap($attributes);
@@ -45,13 +42,14 @@ class CollectionMacros
 
             return $this
                 ->filter(function ($item) use ($attributes, $searchTerm) {
-
                     $included = false;
                     $isArray = is_array($item);
 
                     foreach ($attributes as $attr) {
                         $attrValue = $isArray && isset($item[$attr]) ? $item[$attr] : object_get($item, $attr);
-                        if ($included || !$attrValue) break;
+                        if ($included || ! $attrValue) {
+                            break;
+                        }
 
                         if (str_contains($item[$attr], $searchTerm)) {
                             $included = true;
