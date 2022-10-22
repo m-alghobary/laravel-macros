@@ -8,9 +8,8 @@ namespace Alghobary\Tests\Builder\GetSql;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
-
-use function PHPUnit\Framework\assertIsString;
 use function PHPUnit\Framework\assertEqualsIgnoringCase;
+use function PHPUnit\Framework\assertIsString;
 use function PHPUnit\Framework\assertStringNotContainsString;
 
 
