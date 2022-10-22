@@ -5,8 +5,10 @@ parameters:
     level: 4
     paths:
         - src
-    tmpDir: build/phpstan
-    checkOctaneCompatibility: true
-    checkModelProperties: true
+        
+    ignoreErrors:
+        - 
+            message: '#Undefined variable: \$this.*#'
+            path: src/Macros
     checkMissingIterableValueType: false
 
