@@ -1,14 +1,13 @@
 <?php
 
 /**
- * The namespace exist just to prevent class names conflicts 
+ * The namespace exist just to prevent class names conflicts
  */
 
 namespace Alghobary\Tests\Collection\SearchFor;
 
 use Illuminate\Database\Eloquent\Model;
 use function PHPUnit\Framework\assertEquals;
-
 
 it('can search in collection of objects', function () {
     class MyModel extends Model
@@ -32,7 +31,6 @@ it('can search in collection of objects', function () {
     assertEquals($result[1]->job, 'Photographer');
 });
 
-
 it('can search in collection of associated arrays', function () {
     $items = collect([
         ['id' => 1, 'name' => 'Ali', 'job' => 'Doctor'],
@@ -49,7 +47,6 @@ it('can search in collection of associated arrays', function () {
     assertEquals($result[1]['name'], 'Ahmed');
     assertEquals($result[1]['job'], 'Photographer');
 });
-
 
 it('can search in collection of indexed arrays', function () {
     $items = collect([

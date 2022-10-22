@@ -2,9 +2,9 @@
 
 namespace Alghobary\LaravelMacros;
 
-use Spatie\LaravelPackageTools\Package;
 use Alghobary\LaravelMacros\Macros\BuilderMacros;
 use Alghobary\LaravelMacros\Macros\CollectionMacros;
+use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LaravelMacrosServiceProvider extends PackageServiceProvider
@@ -13,7 +13,6 @@ class LaravelMacrosServiceProvider extends PackageServiceProvider
     {
         $package->name('laravel-macros');
     }
-
 
     public function packageBooted()
     {
