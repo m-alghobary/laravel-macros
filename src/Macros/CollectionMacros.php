@@ -12,7 +12,8 @@ class CollectionMacros
     {
         /**
          * Add pagination support to laravel collections,
-         * because by default laravel only support pagination on Eloquent/Query builder
+         * because by default laravel only support pagination on Eloquent/Query builder objects
+         * 
          */
         Collection::macro('paginate', function ($perPage, $total = null, $page = null, $pageName = 'page') {
             $page = $page ?: LengthAwarePaginator::resolveCurrentPage($pageName);
@@ -29,9 +30,11 @@ class CollectionMacros
             );
         });
 
+
         /**
          * Add a 'searchFor' method, to search in laravel collection,
          * for items that has a search 'term' in one or more of its fields
+         * 
          */
         Collection::macro('searchFor', function (string $searchTerm, array $attributes = []) {
             $attributes = Arr::wrap($attributes);
@@ -47,7 +50,7 @@ class CollectionMacros
 
                     foreach ($attributes as $attr) {
                         $attrValue = $isArray && isset($item[$attr]) ? $item[$attr] : object_get($item, $attr);
-                        if ($included || ! $attrValue) {
+                        if ($included || !$attrValue) {
                             break;
                         }
 

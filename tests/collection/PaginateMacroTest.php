@@ -3,6 +3,7 @@
 use Illuminate\Pagination\LengthAwarePaginator;
 use function PHPUnit\Framework\assertEquals;
 
+
 it('can paginate collections', function () {
     $items = collect(range(1, 100));
 

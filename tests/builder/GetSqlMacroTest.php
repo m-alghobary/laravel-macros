@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * The namespace exist just to prevent class names conflicts 
+ */
+
 namespace Alghobary\Tests\Builder\GetSql;
 
 use Illuminate\Support\Facades\DB;

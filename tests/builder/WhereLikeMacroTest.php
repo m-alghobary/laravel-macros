@@ -1,9 +1,13 @@
 <?php
 
+/**
+ * The namespace exist just to prevent class names conflicts 
+ */
+
 namespace Alghobary\Tests\Builder\WhereLike;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
 
 use function PHPUnit\Framework\assertIsString;
 use function PHPUnit\Framework\assertStringContainsStringIgnoringCase;
