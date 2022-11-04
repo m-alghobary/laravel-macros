@@ -114,6 +114,12 @@ select * from `my_models` where `id` = '1' and (`name` LIKE '%ali%' or `email` L
 composer test
 ```
 
+## Contribute
+If you have any ideas for useful macros that you want to add to this package, feel free to open an issue, and I will try my best to add it, or you can open a pull request to add your macros.
+
+Thanks
+
+
 ## Credits
 
 -   [Mohamed Alghobary](https://github.com/m-alghobary)
