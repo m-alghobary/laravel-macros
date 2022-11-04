@@ -1,12 +1,12 @@
 {
-    "name": "alghobary/laravel-macros",
+    "name": "m-alghobary/laravel-macros",
     "description": "Add missing reusable functionality to Laravel through macros",
     "keywords": [
-        "alghobary",
+        "m-alghobary",
         "laravel",
         "laravel-macros"
     ],
-    "homepage": "https://github.com/alghobary/laravel-macros",
+    "homepage": "https://github.com/m-alghobary/laravel-macros",
     "license": "MIT",
     "authors": [
         {
