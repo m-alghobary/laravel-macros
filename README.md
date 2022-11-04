@@ -4,11 +4,10 @@ Add missing reusable functionality to Laravel through macros
 
 ## Installation
 
-You can install the package via composer:
+I haven't published this package to packagist yet, because the number of macros currently available in this package is not worth it.
+Once the package contains enough macros to be really useful to large groups of developers I will publish it.
 
-```bash
-composer require alghobary/laravel-macros
-```
+If you want to use it as it now, you can clone the repo and install it locally.
 
 ## Usage
 
